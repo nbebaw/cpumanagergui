@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=CpuManagerGui
+Comment=Missing description
+Exec=/usr/bin/CpuManagerGui
+Icon=cpumanagergui
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=System;
