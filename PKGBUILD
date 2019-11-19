@@ -30,8 +30,7 @@ md5sums=('SKIP')
 #}
 
 package() {
-	cd "$pkgname"
-	cd "$pkgname"
+	cd "$pkgname/main/"
 	install -Dm755 /usr/bin/CpuManagerGui ${pkgdir}/usr/bin/CpuManagerGui
 	install -Dm755 /usr/share/applications/cpumanagergui.desktop ${pkgdir}/usr/bin/applications/cpumanagergui.desktop
 	install -Dm755 /usr/share/pixmaps/cpumanager.png ${pkgdir}/usr/share/pixmaps/cpumanager.png
