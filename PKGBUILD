@@ -25,11 +25,12 @@ license=('GPL')
 source=("git+https://github.com/nbebaw/cpumanagergui.git")
 md5sums=('SKIP')
 
-prepare() {
-	tar -zxvf data.tar.gz
-}
+#prepare() {
+#	tar -zxvf data.tar.gz
+#}
 
 package() {
+	cd "$pkgname"
 	cd "$pkgname"
 	install -Dm755 /usr/bin/CpuManagerGui ${pkgdir}/usr/bin/CpuManagerGui
 	install -Dm755 /usr/share/applications/cpumanagergui.desktop ${pkgdir}/usr/bin/applications/cpumanagergui.desktop
