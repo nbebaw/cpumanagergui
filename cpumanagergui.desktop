@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=CpuManagerGui
+Name=Cpu Manager
 Comment=CPU Controler
 Exec=/usr/bin/cpumanagergui
 Icon=cpumanager.png
