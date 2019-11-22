@@ -1,0 +1,112 @@
+' Gambas class file
+
+'This program need root privilege to overwrite turbo_on File on your Kernel
+
+Public Sub Form_Open()
+
+  Dim hFile As File
+  Dim sLine As String
+    
+    hFile = Open "/sys/devices/system/cpu/intel_pstate/no_turbo" For Input
+    SwitchBtOff.Enabled = False
+    SwitchBtOn.Enabled = False
+  While Not Eof(hFile)
+    Line Input #hFile, sLine
+  Wend
+  If (sLine = 1) Then
+    TextOFF.Enabled = True
+    SwitchBtOff.Value = True
+    TextON.Enabled = False
+    
+  Else
+    TextON.Enabled = True
+    SwitchBtOn.Value = True
+    TextOFF.Enabled = False
+    
+  Endif
+
+End
+
+'This function turned turbo Boost off
+Private Function turbo_off()
+  
+  Dim file As File 
+  Dim sLine As String
+
+  'Write 1 to turbo_boost <-- Turbo off
+  Shell "echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo" Wait
+
+  file = Open "/sys/devices/system/cpu/intel_pstate/no_turbo" For Input
+    
+  While Not Eof(file)
+   Line Input #file, sLine
+  Wend
+  If (sLine = 1) Then
+    Text_get_off.Text = "Turbo Boost is Now OFF"
+    SwitchBtOff.Value = True
+    SwitchBtOn.Value = False
+    TextOFF.Enabled = True
+    TextON.Enabled = False
+  Endif
+  Wait 2
+    Text_get_off.Text = ""
+  
+End
+Public Sub Bt_off_Click()
+
+  turbo_off()
+  
+End
+
+'This function turned turbo boos on
+Public Function tubo_on()
+  
+  Dim file As File 
+  Dim sLine As String
+
+  'Write 0 to turbo_boost <-- Turbo on
+  Shell "echo 0 > /sys/devices/system/cpu/intel_pstate/no_turbo" Wait
+
+  file = Open "/sys/devices/system/cpu/intel_pstate/no_turbo" For Input
+    
+  While Not Eof(file)
+   Line Input #file, sLine
+  Wend
+  If (sLine = 0) Then
+    Text_get_on.Text = "Turbo Boost is Now ON"
+    SwitchBtOn.Value = True
+    SwitchBtOff.Value = False
+    TextON.Enabled = True
+    TextOFF.Enabled = False
+    
+  Endif
+  Wait 2 
+    Text_get_on.Text = ""
+  
+End
+
+
+Public Sub Bt_On_Click()
+
+tubo_on()
+
+End
+
+Public Sub Exit_Click()
+
+  FMain.Close
+
+End
+
+'Close Button
+Public Sub Bt_Exit_Click()
+
+  FMain.Close
+
+End
+
+Public Sub About_Click()
+
+  Form2.Show
+
+End

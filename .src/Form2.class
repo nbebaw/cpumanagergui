@@ -1,0 +1,9 @@
+' Gambas class file
+
+
+
+Public Sub F2BtClose_Click()
+
+  Form2.Close
+
+End

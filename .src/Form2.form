@@ -1,0 +1,35 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,65,44)
+  { F2TextLabel TextLabel
+    MoveScaled(1,1,18,6)
+    Font = Font["+3"]
+    Text = ("About")
+  }
+  { F2TextLabelAbout TextLabel
+    MoveScaled(7,10,30,4)
+    Font = Font["+1"]
+    Text = ("This App is made by nbebaw.\n")
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(6,30,53,3)
+    Font = Font["+1"]
+    Text = ("You can only use this App with Arch Linux and KDE.")
+  }
+  { TextLabel2 TextLabel
+    MoveScaled(6,28,7,4)
+    Font = Font["+1"]
+    Foreground = Color.Red
+    Text = ("Note:")
+  }
+  { TextLabel3 TextLabel
+    MoveScaled(7,13,50,12)
+    Font = Font["+1"]
+    Text = ("It is a simple App to control Turbo Boost of your CPU by turning it off or on to control your Battery if you are using Arch Linux on your Laptop")
+  }
+  { F2BtClose Button
+    MoveScaled(23,36,16,4)
+    Text = ("Close")
+  }
+}

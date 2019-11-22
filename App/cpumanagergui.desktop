@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Cpu Manager
+Comment=CPU Controler
+Exec=kdesu /usr/bin/cpu-manager
+Icon=cpumanager.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=System;
