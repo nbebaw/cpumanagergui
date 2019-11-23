@@ -6,22 +6,22 @@ Public Sub Form_Open()
 
   Dim hFile As File
   Dim sLine As String
-    
-    hFile = Open "/sys/devices/system/cpu/intel_pstate/no_turbo" For Input
+  hFile = Open "/sys/devices/system/cpu/intel_pstate/no_turbo" For Input
     SwitchBtOff.Enabled = False
     SwitchBtOn.Enabled = False
   While Not Eof(hFile)
     Line Input #hFile, sLine
   Wend
   If (sLine = 1) Then
-    TextOFF.Enabled = True
+    TextOFF.Show
+    TextON.Hide
     SwitchBtOff.Value = True
-    TextON.Enabled = False
+    
     
   Else
-    TextON.Enabled = True
+    TextON.Show
+    TextOFF.Hide
     SwitchBtOn.Value = True
-    TextOFF.Enabled = False
     
   Endif
 
@@ -45,8 +45,9 @@ Private Function turbo_off()
     Text_get_off.Text = "Turbo Boost is Now OFF"
     SwitchBtOff.Value = True
     SwitchBtOn.Value = False
-    TextOFF.Enabled = True
-    TextON.Enabled = False
+    TextOFF.Show
+    TextON.Hide
+    
   Endif
   Wait 2
     Text_get_off.Text = ""
@@ -76,8 +77,9 @@ Public Function tubo_on()
     Text_get_on.Text = "Turbo Boost is Now ON"
     SwitchBtOn.Value = True
     SwitchBtOff.Value = False
-    TextON.Enabled = True
-    TextOFF.Enabled = False
+    TextON.Show
+    TextOFF.Hide
+
     
   Endif
   Wait 2 

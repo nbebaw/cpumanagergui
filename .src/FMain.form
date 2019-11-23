@@ -4,6 +4,11 @@
   MoveScaled(0,0,108,57)
   Foreground = Color.Black
   Icon = Picture["cpumanager.png"]
+  Mask = True
+  Minimized = True
+  Maximized = True
+  Margin = True
+  Invert = True
   { File Menu
     Text = ("File")
     { About Menu
@@ -14,14 +19,15 @@
     }
   }
   { aboutText TextLabel
-    MoveScaled(0.5714,50.1429,17,4)
+    MoveScaled(0.5714,50,17,4)
+    AutoResize = True
     Text = ("CPU Manager v1.0")
   }
   { Bt_On Button
     MoveScaled(66,17,23,5)
     Font = Font["+3"]
     Background = Color.Background
-    Text = ("On")
+    Text = ("ON")
   }
   { Bt_off Button
     MoveScaled(66,24,23,5)
@@ -30,21 +36,21 @@
     Text = ("OFF")
   }
   { Bt_Exit Button
-    MoveScaled(91,41,16,4)
+    MoveScaled(91,43,16,4)
     Text = ("EXIT")
   }
   { TextLabel2 TextLabel
-    MoveScaled(2,5,92,7)
+    MoveScaled(2,5.1429,92,5)
     Font = Font["Sans Serif,+3"]
     Text = ("Here you can turn Off or On your Turbo Boost")
   }
   { Text_get_on TextLabel
-    MoveScaled(2,17,61,5)
+    MoveScaled(2,17.5714,61,4.4286)
     Font = Font["Sans Serif,+3"]
     Background = Color.TextBackground
   }
   { Text_get_off TextLabel
-    MoveScaled(2,24,61,5)
+    MoveScaled(2,24.7143,61,4.2857)
     Font = Font["Sans Serif,+3"]
     Background = Color.TextBackground
   }
@@ -72,6 +78,7 @@
   { TextOFF TextLabel
     MoveScaled(85,33,7,4)
     Font = Font["+1"]
+    AutoResize = True
     Text = ("Active")
   }
 }

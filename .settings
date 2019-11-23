@@ -6,11 +6,11 @@ Count=0
 
 [Executable]
 DoNotIncrementVersion=False
-Path="cpumanagergui.gambas"
+Path="cpumanagerguiV1.0.1.gambas"
 
 [OpenFile]
-File[1]=".src/FMain.class:13.100"
-Active=1
+File[1]=".src/FMain.class:3.71"
+Active=2
 File[2]=".src/FMain.form"
 Count=4
 File[3]=".src/Form2.form"

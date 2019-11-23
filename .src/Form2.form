@@ -26,7 +26,7 @@
   { TextLabel3 TextLabel
     MoveScaled(7,13,50,12)
     Font = Font["+1"]
-    Text = ("It is a simple App to control Turbo Boost of your CPU by turning it off or on to control your Battery if you are using Arch Linux on your Laptop")
+    Text = ("It is a simple App to control Turbo Boost of your CPU by turning it off or on to control your Battery if you are using Arch Linux on your Laptop.")
   }
   { F2BtClose Button
     MoveScaled(23,36,16,4)
