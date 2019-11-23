@@ -6,7 +6,7 @@ Count=0
 
 [Executable]
 DoNotIncrementVersion=False
-Path="cpumanagerguiV1.0.1.gambas"
+Path="App/cpumanagergui.gambas"
 
 [OpenFile]
 File[1]=".src/FMain.class:3.71"

@@ -1,14 +1,11 @@
 # Gambas Form File 3.0
 
 { Form Form
-  MoveScaled(0,0,108,57)
+  Move(0,0,756,399)
+  #Scaled = False
   Foreground = Color.Black
   Icon = Picture["cpumanager.png"]
-  Mask = True
-  Minimized = True
-  Maximized = True
-  Margin = True
-  Invert = True
+  Resizable = False
   { File Menu
     Text = ("File")
     { About Menu
@@ -19,64 +16,64 @@
     }
   }
   { aboutText TextLabel
-    MoveScaled(0.5714,50,17,4)
+    Move(4,350,119,28)
     AutoResize = True
     Text = ("CPU Manager v1.0")
   }
   { Bt_On Button
-    MoveScaled(66,17,23,5)
+    Move(462,119,161,35)
     Font = Font["+3"]
     Background = Color.Background
     Text = ("ON")
   }
   { Bt_off Button
-    MoveScaled(66,24,23,5)
+    Move(462,168,161,35)
     Font = Font["+3"]
     Background = Color.Background
     Text = ("OFF")
   }
   { Bt_Exit Button
-    MoveScaled(91,43,16,4)
+    Move(637,301,112,28)
     Text = ("EXIT")
   }
   { TextLabel2 TextLabel
-    MoveScaled(2,5.1429,92,5)
+    Move(14,36,644,35)
     Font = Font["Sans Serif,+3"]
     Text = ("Here you can turn Off or On your Turbo Boost")
   }
   { Text_get_on TextLabel
-    MoveScaled(2,17.5714,61,4.4286)
+    Move(14,123,427,31)
     Font = Font["Sans Serif,+3"]
     Background = Color.TextBackground
   }
   { Text_get_off TextLabel
-    MoveScaled(2,24.7143,61,4.2857)
+    Move(14,173,427,30)
     Font = Font["Sans Serif,+3"]
     Background = Color.TextBackground
   }
   { Separator1 Separator
-    MoveScaled(0,47.8571,111,4)
+    Move(0,335,777,28)
   }
   { Separator2 Separator
-    MoveScaled(64,18,1,4)
+    Move(448,126,7,28)
   }
   { Separator3 Separator
-    MoveScaled(64,25,1,4)
+    Move(448,175,7,28)
   }
   { SwitchBtOn SwitchButton
-    MoveScaled(67,12,21,4)
+    Move(469,84,147,28)
   }
   { SwitchBtOff SwitchButton
-    MoveScaled(67,30,21,4)
+    Move(469,210,147,28)
     Background = &H606060&
   }
   { TextON TextLabel
-    MoveScaled(85,9,7,4)
+    Move(595,63,49,28)
     Font = Font["+1"]
     Text = ("Active")
   }
   { TextOFF TextLabel
-    MoveScaled(85,33,7,4)
+    Move(595,231,49,28)
     Font = Font["+1"]
     AutoResize = True
     Text = ("Active")
