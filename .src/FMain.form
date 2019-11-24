@@ -15,11 +15,6 @@
       Text = ("Exit")
     }
   }
-  { aboutText TextLabel
-    Move(4,350,119,28)
-    AutoResize = True
-    Text = ("CPU Manager v1.0")
-  }
   { Bt_On Button
     Move(462,119,161,35)
     Font = Font["+3"]
@@ -52,7 +47,7 @@
     Background = Color.TextBackground
   }
   { Separator1 Separator
-    Move(0,335,777,28)
+    Move(0,343,777,14)
   }
   { Separator2 Separator
     Move(448,126,7,28)
@@ -77,5 +72,9 @@
     Font = Font["+1"]
     AutoResize = True
     Text = ("Active")
+  }
+  { TextLabel1 TextLabel
+    Move(3,351,119,19)
+    Text = ("CPU Manager V1.0")
   }
 }
