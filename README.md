@@ -1,6 +1,6 @@
 ﻿# Cpu Manager
  
- <h2>Note: </h2> This App works now only on Arch Linux with KDE
+ <h2>Note: </h2> This App works now only on Arch Linux with KDE and modern CPU
  
  <h3>Features:</h3>
  <p>This app need <strong>root</strong> privilege to modify a File in your Kernel.</p>
