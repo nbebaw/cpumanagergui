@@ -75,6 +75,6 @@
   }
   { TextLabel1 TextLabel
     Move(3,351,119,19)
-    Text = ("CPU Manager V1.0")
+    Text = ("V1.2-4")
   }
 }
