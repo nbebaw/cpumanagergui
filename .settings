@@ -9,7 +9,7 @@ DoNotIncrementVersion=False
 Path="App/cpumanagergui.gambas"
 
 [OpenFile]
-File[1]=".src/FMain.class:28.12"
+File[1]=".src/FMain.class:0.88"
 Active=1
 File[2]=".src/FMain.form"
 Count=4

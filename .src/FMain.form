@@ -32,19 +32,21 @@
     Text = ("EXIT")
   }
   { TextLabel2 TextLabel
-    Move(14,36,644,35)
+    Move(14,43,644,35)
     Font = Font["Sans Serif,+3"]
     Text = ("Here you can turn Off or On your Turbo Boost")
   }
   { Text_get_on TextLabel
-    Move(14,123,427,31)
+    Move(14,119,427,42)
     Font = Font["Sans Serif,+3"]
     Background = Color.TextBackground
+    Border = Border.Etched
   }
   { Text_get_off TextLabel
-    Move(14,173,427,30)
+    Move(14,168,427,42)
     Font = Font["Sans Serif,+3"]
     Background = Color.TextBackground
+    Border = Border.Etched
   }
   { Separator1 Separator
     Move(0,343,777,14)
@@ -68,13 +70,21 @@
     Text = ("Active")
   }
   { TextOFF TextLabel
-    Move(595,231,49,28)
+    Move(595,234,49,28)
     Font = Font["+1"]
     AutoResize = True
     Text = ("Active")
   }
   { TextLabel1 TextLabel
     Move(3,351,119,19)
-    Text = ("V1.2-4")
+    Text = ("V1.2-6")
+  }
+  { Text_Label_Exit TextLabel
+    Move(595,304,35,21)
+    Font = Font["+1"]
+    Foreground = &HFF3F42&
+    Text = ("Wait")
+    Alignment = Align.Center
+    Transparent = True
   }
 }
