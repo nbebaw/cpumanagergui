@@ -5,7 +5,7 @@
  <h3>Features:</h3>
  <p>This app need <strong>root</strong> privilege to modify a File in your Kernel.</p>
  <p>You can choose to turn On or Off your turbo Boost of your CPU with this App to save Battery.</p>
- <p>This App can show the previous stand.</p>
+ <p>This App can show the previous state.</p>
 
 ![Screenshot_20191122_205051](https://user-images.githubusercontent.com/57049550/69494078-9a5fe000-0eb7-11ea-8c88-79c309b2db76.png)
 
